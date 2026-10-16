@@ -10,6 +10,7 @@ jobs:
       - name: Print Goodbye
         run: echo "Done-bye!"  
   second-job:
+    needs: first-job
     runs-on: windows-latest
     steps:
         - name: Print multi lines 
