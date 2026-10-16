@@ -9,3 +9,12 @@ jobs:
         
       - name: Print Goodbye
         run: echo "Done-bye!"
+        
+   second-job:
+      runs-on: windows-latest
+      steps:
+        -name: Print multi lines 
+         run:| 
+              echo " Hi.. Maruthapandi"
+              echo " How are you!..."
+              echo " where are you from....?"
