@@ -2,19 +2,19 @@ name: first workflow
 on: workflow_dispatch
 jobs:
   first-job:
-    runs-on: windows-latest
+  runs-on: windows-latest
     steps:
       - name: Print Greeting
         run: echo "Hello World!"
         
       - name: Print Goodbye
-        run: echo "Done-bye!"
-        
-   second-job:
-      runs-on: windows-latest
-      steps:
+        run: echo "Done-bye!"  
+  second-job:
+  runs-on: windows-latest
+    steps:
         -name: Print multi lines 
-         run:| 
-              echo " Hi.. Maruthapandi"
-              echo " How are you!..."
-              echo " where are you from....?"
+         run:| echo " Hi.. Maruthapandi"
+               echo " How are you!..."
+               echo " where are you from....?"     
+   
+      
